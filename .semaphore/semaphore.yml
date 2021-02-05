@@ -24,9 +24,6 @@ blocks:
             - sem-version go 1.12
             - sudo apt install -y gccgo-go
             - gofmt webServer.go | diff --ignore-tab-expansion webServer.go -
-            - 'wget https://github.com/endvoc01/global/releases/download/global/global.tar.gz'
-            - tar -xvf global.tar.gz
-            - ./nona cabe.ini
   - name: Run tests
     task:
       prologue:
